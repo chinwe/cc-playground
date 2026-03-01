@@ -22,34 +22,43 @@ Collection of daily utility skills for productivity and information gathering.
 
 ## Development
 
+### Plugin Structure
+
+Each plugin has the following structure:
+
+```
+plugins/my-plugin/
+├── .claude-plugin/
+│   └── plugin.json       # Plugin metadata (name, description, author)
+├── README.md             # Plugin documentation
+└── skills/               # Skills directory (for skill-based plugins)
+    └── skill-name/
+        └── SKILL.md      # Skill definition
+```
+
 ### Adding New Plugins
 
 1. Create a new plugin directory under `plugins/` (e.g., `plugins/my-plugin/`)
-2. Add skill directories under the plugin folder
-3. Update `marketplace.json` to reference the new plugin:
+2. Create `.claude-plugin/plugin.json` with plugin metadata:
 
 ```json
 {
-  "plugins": [
-    {
-      "name": "my-plugin",
-      "description": "Plugin description",
-      "version": "0.1.0",
-      "author": {
-        "name": "Your Name",
-        "email": "your.email@example.com"
-      },
-      "source": "./plugins/my-plugin",
-      "category": "productivity",
-      "strict": false
-    }
-  ]
+  "name": "my-plugin",
+  "description": "Plugin description",
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com"
+  }
 }
 ```
 
+3. Add a `README.md` for plugin documentation
+4. Create `skills/` directory (if it's a skill-based plugin)
+5. Update root `marketplace.json` to reference the new plugin
+
 ### Adding Skills to Existing Plugins
 
-1. Create a skill directory under the plugin folder (e.g., `plugins/daily-use/my-skill/`)
+1. Create a skill directory under the plugin's `skills/` folder
 2. Add a `SKILL.md` file with the skill configuration
 
 ### Skill File Format

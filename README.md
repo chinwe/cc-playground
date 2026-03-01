@@ -12,8 +12,12 @@ Claude Code plugin playground.
 
 plugins/                      # Plugin directory
 └── daily-use/                # Daily utility plugin
-    └── daily-briefing/
-        └── SKILL.md          # Daily briefing skill
+    ├── .claude-plugin/
+    │   └── plugin.json       # Plugin metadata
+    ├── README.md
+    └── skills/               # Skills directory
+        └── daily-briefing/
+            └── SKILL.md      # Daily briefing skill
 ```
 
 ## Plugins
