@@ -17,7 +17,7 @@
       },
       "source": "./plugins/daily-use",
       "category": "productivity",
-      "strict": false,
+      "strict": true,
       "skills": [
         "./plugins/daily-use/skills/daily-briefing"
       ]
