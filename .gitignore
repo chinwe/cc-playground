@@ -1,11 +1,6 @@
-# Config files
-config.yaml
-*.yaml
-*.yml
-!example*.yaml
-!example*.yml
-!requirements.txt
+*.DS_Store
+.claude/
 
-# Data directories
-data/
-*.zip
+# Plugin config files (keep templates)
+**/config.yaml
+!**/config.template.yaml

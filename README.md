@@ -1,41 +1,55 @@
 # cc-playground
 
-Claude Code plugin playground.
+A curated directory of plugins for Claude Code.
 
-## Marketplace Structure
+> **⚠️ Important:** Make sure you trust a plugin before installing, updating, or using it. The plugin author does not control what MCP servers, files, or other software are included in plugins and cannot verify that they will work as intended or that they won't change. See each plugin's documentation for more information.
 
-```
-.claude-plugin/
-├── marketplace.json          # Marketplace metadata and configuration
-├── README.md                 # Marketplace documentation
-└── THIRD_PARTY_NOTICES.md    # License information
+## Structure
 
-plugins/                      # Plugin directory
-└── daily-use/                # Daily utility plugin
-    ├── .claude-plugin/
-    │   └── plugin.json       # Plugin metadata
-    ├── README.md
-    └── skills/               # Skills directory
-        └── daily-briefing/
-            └── SKILL.md      # Daily briefing skill
-```
+- **`/plugins`** - Plugins for daily productivity and utility
+- **`/external_plugins`** - Third-party plugins from partners and the community (optional)
 
-## Plugins
+## Installation
+
+Plugins can be installed directly from this marketplace via Claude Code's plugin system.
+
+To install, run `/plugin install {plugin-name}@cc-playground`
+
+or browse for the plugin in `/plugin > Discover`
+
+## Available Plugins
 
 ### daily-use
+
 Collection of daily utility skills for productivity and information gathering.
 
 **Skills:**
 - **daily-briefing**: Generate daily briefing summaries including weather, news, calendar events, and task priorities
 
-## Installation
+## Contributing
 
-```bash
-# Install the plugin from this directory
-claude plugin install .
+### Adding Plugins
+
+1. Create a new plugin directory under `plugins/` (e.g., `plugins/my-plugin/`)
+2. Add `.claude-plugin/plugin.json` with plugin metadata
+3. Add a `README.md` for plugin documentation
+4. Create appropriate directories (commands/, agents/, skills/)
+5. Update root `.claude-plugin/marketplace.json` to reference the new plugin
+
+### Plugin Structure
+
+Each plugin follows a standard structure:
+
+```
+plugin-name/
+├── .claude-plugin/
+│   └── plugin.json      # Plugin metadata (required)
+├── commands/            # Slash commands (optional)
+├── agents/              # Agent definitions (optional)
+├── skills/              # Skill definitions (optional)
+└── README.md            # Documentation
 ```
 
+## Documentation
 
-## Development
-
-See `.claude-plugin/README.md` for development details.
+For more information on developing Claude Code plugins, see the [official documentation](https://code.claude.com/docs/en/plugins).
