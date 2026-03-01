@@ -15,7 +15,7 @@
       "source": "./",
       "strict": false,
       "skills": [
-        "../skills/daily-briefing"
+        "./skills/daily-briefing"
       ]
     }
   ]
