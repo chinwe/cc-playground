@@ -24,7 +24,7 @@ Collection of daily utility skills for productivity and information gathering.
 
 ### Adding New Plugins
 
-1. Create a new plugin directory in the project root (e.g., `my-plugin/`)
+1. Create a new plugin directory under `plugins/` (e.g., `plugins/my-plugin/`)
 2. Add skill directories under the plugin folder
 3. Update `marketplace.json` to reference the new plugin:
 
@@ -34,9 +34,14 @@ Collection of daily utility skills for productivity and information gathering.
     {
       "name": "my-plugin",
       "description": "Plugin description",
-      "source": "./",
-      "strict": false,
-      "skills": ["./my-plugin/skill-name"]
+      "version": "0.1.0",
+      "author": {
+        "name": "Your Name",
+        "email": "your.email@example.com"
+      },
+      "source": "./plugins/my-plugin",
+      "category": "productivity",
+      "strict": false
     }
   ]
 }
@@ -44,9 +49,8 @@ Collection of daily utility skills for productivity and information gathering.
 
 ### Adding Skills to Existing Plugins
 
-1. Create a skill directory under the plugin folder (e.g., `daily-use/my-skill/`)
+1. Create a skill directory under the plugin folder (e.g., `plugins/daily-use/my-skill/`)
 2. Add a `SKILL.md` file with the skill configuration
-3. Update `marketplace.json` to add the skill to the plugin's skills array
 
 ### Skill File Format
 

@@ -10,9 +10,10 @@ Claude Code plugin playground.
 ├── README.md                 # Marketplace documentation
 └── THIRD_PARTY_NOTICES.md    # License information
 
-daily-use/                    # Daily utility plugin
-└── daily-briefing/
-    └── SKILL.md              # Daily briefing skill
+plugins/                      # Plugin directory
+└── daily-use/                # Daily utility plugin
+    └── daily-briefing/
+        └── SKILL.md          # Daily briefing skill
 ```
 
 ## Plugins

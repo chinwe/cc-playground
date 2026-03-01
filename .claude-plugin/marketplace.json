@@ -1,22 +1,23 @@
 {
-  "name": "cc-playground-marketplace",
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "cc-playground",
+  "description": "Claude Code plugin marketplace for daily utility skills",
   "owner": {
     "name": "chinwe",
     "email": "chinwe122@gmail.com"
-  },
-  "metadata": {
-    "description": "Claude Code plugin marketplace for cc-playground",
-    "version": "0.1.0"
   },
   "plugins": [
     {
       "name": "daily-use",
       "description": "Collection of daily utility skills for productivity and information gathering",
-      "source": "./",
-      "strict": false,
-      "skills": [
-        "./daily-use/daily-briefing"
-      ]
+      "version": "0.1.0",
+      "author": {
+        "name": "chinwe",
+        "email": "chinwe122@gmail.com"
+      },
+      "source": "./plugins/daily-use",
+      "category": "productivity",
+      "strict": false
     }
   ]
 }
