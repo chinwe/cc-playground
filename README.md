@@ -2,17 +2,26 @@
 
 Claude Code plugin playground.
 
-## Plugin Structure
+## Marketplace Structure
 
 ```
 .claude-plugin/
-├── marketplace.json          # Plugin metadata and configuration
-├── README.md                 # Plugin documentation
-├── THIRD_PARTY_NOTICES.md    # License information
-└── skills/                   # Skill definitions
-    └── daily-briefing/
-        └── SKILL.md          # Daily briefing skill
+├── marketplace.json          # Marketplace metadata and configuration
+├── README.md                 # Marketplace documentation
+└── THIRD_PARTY_NOTICES.md    # License information
+
+daily-use/                    # Daily utility plugin
+└── daily-briefing/
+    └── SKILL.md              # Daily briefing skill
 ```
+
+## Plugins
+
+### daily-use
+Collection of daily utility skills for productivity and information gathering.
+
+**Skills:**
+- **daily-briefing**: Generate daily briefing summaries including weather, news, calendar events, and task priorities
 
 ## Installation
 
@@ -21,9 +30,6 @@ Claude Code plugin playground.
 claude plugin install .
 ```
 
-## Skills
-
-- **daily-briefing**: Generate daily briefing summaries including weather, news, calendar events, and task priorities
 
 ## Development
 

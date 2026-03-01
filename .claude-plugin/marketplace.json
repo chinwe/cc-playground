@@ -1,21 +1,21 @@
 {
-  "name": "cc-playground-plugin",
+  "name": "cc-playground-marketplace",
   "owner": {
     "name": "chinwe",
     "email": "chinwe122@gmail.com"
   },
   "metadata": {
-    "description": "Claude Code plugin for cc-playground",
+    "description": "Claude Code plugin marketplace for cc-playground",
     "version": "0.1.0"
   },
   "plugins": [
     {
-      "name": "playground-skills",
-      "description": "Collection of skills for cc-playground",
+      "name": "daily-use",
+      "description": "Collection of daily utility skills for productivity and information gathering",
       "source": "./",
       "strict": false,
       "skills": [
-        "./skills/daily-briefing"
+        "./daily-use/daily-briefing"
       ]
     }
   ]
