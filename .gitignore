@@ -1,2 +1,11 @@
 # Config files
 config.yaml
+*.yaml
+*.yml
+!example*.yaml
+!example*.yml
+!requirements.txt
+
+# Data directories
+data/
+*.zip
