@@ -4,3 +4,7 @@
 # Plugin config files (keep templates)
 **/config.yaml
 !**/config.template.yaml
+
+
+# output
+data
