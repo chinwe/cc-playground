@@ -22,9 +22,9 @@ claude plugin install <path-to-this-repo>
 
 ### Adding New Skills
 
-1. Create a new directory under `.claude-plugin/skills/`
+1. Create a new directory under `skills/` in the project root
 2. Add a `SKILL.md` file with the skill configuration
-3. Update `marketplace.json` to reference the new skill
+3. Update `marketplace.json` to reference the new skill (use `../skills/skill-name`)
 
 ### Skill File Format
 

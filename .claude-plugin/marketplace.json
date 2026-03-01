@@ -1,8 +1,8 @@
 {
   "name": "cc-playground-plugin",
   "owner": {
-    "name": "Your Name",
-    "email": "your.email@example.com"
+    "name": "chinwe",
+    "email": "chinwe122@gmail.com"
   },
   "metadata": {
     "description": "Claude Code plugin for cc-playground",
@@ -15,7 +15,7 @@
       "source": "./",
       "strict": false,
       "skills": [
-        "./skills/daily-briefing"
+        "../skills/daily-briefing"
       ]
     }
   ]

@@ -8,10 +8,11 @@ Claude Code plugin playground.
 .claude-plugin/
 ├── marketplace.json          # Plugin metadata and configuration
 ├── README.md                 # Plugin documentation
-├── THIRD_PARTY_NOTICES.md    # License information
-└── skills/                   # Skill definitions
-    └── daily-briefing/
-        └── SKILL.md          # Daily briefing skill
+└── THIRD_PARTY_NOTICES.md    # License information
+
+skills/                       # Skill definitions
+└── daily-briefing/
+    └── SKILL.md              # Daily briefing skill
 ```
 
 ## Installation
